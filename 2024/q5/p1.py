@@ -13,11 +13,14 @@ def main():
     with open("q5/input.txt", "r") as fd:
         input_ = fd.readlines()
 
-    ordering_rules = [list(map(int, l.split("|"))) for l in input_ if "|" in l]
+    ordering_rules = [list(map(int, line.split("|"))) for line in input_ if "|" in line]
     updates = [
-        list(map(int, l.split(","))) for l in input_ if "|" not in l and l.strip()
+        list(map(int, line.split(",")))
+        for line in input_
+        if "|" not in line and line.strip()
     ]
 
+    # This is a reverse lookup; given a page number tell me what has to go before it
     rules = defaultdict(set)
     for first, second in ordering_rules:
         rules[second].add(first)
