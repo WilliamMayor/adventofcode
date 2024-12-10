@@ -38,7 +38,7 @@ I know the answer, but that's what I missed this time around.
 
 
 def main():
-    with open("q9/input.txt", "r") as fd:
+    with open("q09/input.txt", "r") as fd:
         input_ = list(map(int, fd.read().strip()))
 
     input_len = len(input_)

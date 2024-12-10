@@ -10,7 +10,7 @@ def is_correct(update, ordering_rules):
 
 
 def main():
-    with open("q5/input.txt", "r") as fd:
+    with open("q05/input.txt", "r") as fd:
         input_ = fd.readlines()
 
     ordering_rules = [list(map(int, line.split("|"))) for line in input_ if "|" in line]

@@ -68,7 +68,7 @@ def simulate_guard(
 
 
 def main():
-    with open("q6/input.txt", "r") as fd:
+    with open("q06/input.txt", "r") as fd:
         map: list[str] = fd.readlines()
 
     total = 0

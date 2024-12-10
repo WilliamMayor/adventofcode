@@ -1,10 +1,7 @@
 def is_safe(line):
-    line = line.split()
-    previous = int(line[0])
+    previous = line[0]
     is_increasing = None
     for current in line[1:]:
-        current = int(current)
-
         if is_increasing is None:
             is_increasing = current > previous
 
@@ -23,11 +20,25 @@ def is_safe(line):
     return True
 
 
+def is_safe_with_removals(line):
+    line = list(map(int, line.split()))
+
+    if is_safe(line):
+        return True
+
+    for idx in range(len(line)):
+        smaller_line = list(line)
+        smaller_line.pop(idx)
+        if is_safe(smaller_line):
+            return True
+    return False
+
+
 def main():
-    with open("q2/input.txt", "r") as fd:
+    with open("q02/input.txt", "r") as fd:
         input_ = fd.readlines()
 
-    lines = filter(is_safe, input_)
+    lines = filter(is_safe_with_removals, input_)
 
     total = len(list(lines))
     print(total)

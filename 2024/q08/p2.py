@@ -52,7 +52,7 @@ def print_map(input_, a, b, antinodes):
 
 
 def main():
-    with open("q8/input.txt", "r") as fd:
+    with open("q08/input.txt", "r") as fd:
         input_ = fd.read().strip().split()
 
     antinodes = set()

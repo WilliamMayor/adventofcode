@@ -28,7 +28,7 @@ def is_in_bounds(node, input_):
 
 
 def main():
-    with open("q8/input.txt", "r") as fd:
+    with open("q08/input.txt", "r") as fd:
         input_ = fd.read().strip().split()
 
     antinodes = set()

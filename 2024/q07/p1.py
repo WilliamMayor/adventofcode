@@ -2,7 +2,7 @@ import itertools
 
 
 def main():
-    with open("q7/input.txt", "r") as fd:
+    with open("q07/input.txt", "r") as fd:
         input_ = fd.readlines()
 
     equations = []

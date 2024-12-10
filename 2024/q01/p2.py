@@ -2,7 +2,7 @@ from collections import Counter
 
 
 def main():
-    with open("q1/input.txt", "r") as fd:
+    with open("q01/input.txt", "r") as fd:
         input_ = fd.read()
     parts = input_.split()
     first = [int(p) for p in parts[::2]]

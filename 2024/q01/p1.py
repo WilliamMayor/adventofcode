@@ -1,5 +1,5 @@
 def main():
-    with open("q1/input.txt", "r") as fd:
+    with open("q01/input.txt", "r") as fd:
         input_ = fd.read()
     parts = input_.split()
     first = sorted([int(p) for p in parts[::2]])

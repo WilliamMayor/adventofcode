@@ -31,7 +31,7 @@ DIRECTIONS = [
 
 
 def main():
-    with open("q4/input.txt", "r") as fd:
+    with open("q04/input.txt", "r") as fd:
         input_ = fd.readlines()
 
         total = 0

@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    with open("q3/input.txt", "r") as fd:
+    with open("q03/input.txt", "r") as fd:
         input_ = fd.read()
     is_do = True
     total = 0
